@@ -1,0 +1,28 @@
+{
+  "name": "infinite-grid",
+  "version": "0.0.1",
+  "description": "A description",
+  "author": "Antoine Duval (HeyHeyChicken)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HeyHeyChicken/ng-infinite-grid.git"
+  },
+  "homepage": "https://github.com/HeyHeyChicken/ng-infinite-grid",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "grid",
+    "row",
+    "container",
+    "column"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^14.2.0",
+    "@angular/core": "^14.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

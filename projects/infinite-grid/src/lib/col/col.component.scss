@@ -1,0 +1,111 @@
+@import "../shared.scss";
+
+:host {
+    flex: 1 0 0%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    &:not(:empty) {
+        padding: 0 $margin;
+        margin: $margin 0;
+        max-height: calc(100% - #{$margin} * 2);
+    }
+
+    &.xs-auto, &.sm-auto, &.md-auto, &.lg-auto, &.xl-auto, &.xxl-auto{
+        flex: 0 0 auto;
+        width: auto;
+    }
+}
+
+$size: 24;
+
+@media (min-width: 0px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.xs-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.sm-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.md-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.lg-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.xl-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.xxl-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+}
