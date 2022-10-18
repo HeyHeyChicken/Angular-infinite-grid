@@ -1,7 +1,7 @@
 {
-  "name": "infinite-grid",
-  "version": "0.0.1",
-  "description": "A description",
+  "name": "@heyheychicken/infinite-grid",
+  "version": "0.0.2",
+  "description": "Fast and minimalist grid system for your Angular project.",
   "author": "Antoine Duval (HeyHeyChicken)",
   "repository": {
     "type": "git",
@@ -25,11 +25,11 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "module": "fesm2015/infinite-grid.mjs",
-  "es2020": "fesm2020/infinite-grid.mjs",
-  "esm2020": "esm2020/infinite-grid.mjs",
-  "fesm2020": "fesm2020/infinite-grid.mjs",
-  "fesm2015": "fesm2015/infinite-grid.mjs",
+  "module": "fesm2015/heyheychicken-infinite-grid.mjs",
+  "es2020": "fesm2020/heyheychicken-infinite-grid.mjs",
+  "esm2020": "esm2020/heyheychicken-infinite-grid.mjs",
+  "fesm2020": "fesm2020/heyheychicken-infinite-grid.mjs",
+  "fesm2015": "fesm2015/heyheychicken-infinite-grid.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -37,11 +37,11 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2020": "./esm2020/infinite-grid.mjs",
-      "es2020": "./fesm2020/infinite-grid.mjs",
-      "es2015": "./fesm2015/infinite-grid.mjs",
-      "node": "./fesm2015/infinite-grid.mjs",
-      "default": "./fesm2020/infinite-grid.mjs"
+      "esm2020": "./esm2020/heyheychicken-infinite-grid.mjs",
+      "es2020": "./fesm2020/heyheychicken-infinite-grid.mjs",
+      "es2015": "./fesm2015/heyheychicken-infinite-grid.mjs",
+      "node": "./fesm2015/heyheychicken-infinite-grid.mjs",
+      "default": "./fesm2020/heyheychicken-infinite-grid.mjs"
     }
   },
   "sideEffects": false

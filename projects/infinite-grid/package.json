@@ -1,7 +1,7 @@
 {
-  "name": "infinite-grid",
-  "version": "0.0.1",
-  "description": "A description",
+  "name": "@heyheychicken/infinite-grid",
+  "version": "0.0.2",
+  "description": "Fast and minimalist grid system for your Angular project.",
   "author": "Antoine Duval (HeyHeyChicken)",
   "repository": {
     "type": "git",
