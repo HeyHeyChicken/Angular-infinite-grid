@@ -1,9 +1,11 @@
 <div align="center">
   
-## ng-infinite-grid
-</div>
+<img width="200" src="./logo.png" />
+<br/>
 <br/>
 Fast and minimalist grid system for your Angular project.
+</div>
+<br/>
 
 ```html
 <container>
