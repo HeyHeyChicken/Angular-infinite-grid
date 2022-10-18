@@ -1,6 +1,6 @@
 <div align="center">
   
-<img width="200" src="./logo.png" />
+<img width="200" src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/projects/infinite-grid/logo.png" />
 <br/>
 <br/>
 Fast and minimalist grid system for your Angular project.
