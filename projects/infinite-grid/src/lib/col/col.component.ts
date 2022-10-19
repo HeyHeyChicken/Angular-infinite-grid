@@ -34,19 +34,19 @@ export class ColComponent implements OnInit {
     if (this.xs == 'auto') CLASSES.push('xs-' + this.xs);
     else if (this.xs >= 0) CLASSES.push('xs-' + this.xs);
 
-    if (this.sm == 'auto') CLASSES.push('xs-' + this.xs);
+    if (this.sm == 'auto') CLASSES.push('sm-' + this.xs);
     else if (this.sm >= 0) CLASSES.push('sm-' + this.sm);
 
-    if (this.md == 'auto') CLASSES.push('xs-' + this.xs);
+    if (this.md == 'auto') CLASSES.push('md-' + this.xs);
     else if (this.md >= 0) CLASSES.push('md-' + this.md);
 
-    if (this.lg == 'auto') CLASSES.push('xs-' + this.xs);
+    if (this.lg == 'auto') CLASSES.push('lg-' + this.xs);
     else if (this.lg >= 0) CLASSES.push('lg-' + this.lg);
 
-    if (this.xl == 'auto') CLASSES.push('xs-' + this.xs);
+    if (this.xl == 'auto') CLASSES.push('xl-' + this.xs);
     else if (this.xl >= 0) CLASSES.push('xl-' + this.xl);
 
-    if (this.xxl == 'auto') CLASSES.push('xs-' + this.xs);
+    if (this.xxl == 'auto') CLASSES.push('xxl-' + this.xs);
     else if (this.xxl >= 0) CLASSES.push('xxl-' + this.xxl);
 
     this.classAttribute = CLASSES.join(' ');
