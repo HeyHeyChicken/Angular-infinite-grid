@@ -13,7 +13,7 @@ Fast and minimalist grid system for your Angular project.
     <column [xs]="12" [sm]="4" [md]="6" [lg]="5" [xl]="4" [xxl]="3">
       My first col content
     </column>
-    <column [xs]="auto">
+    <column [xs]="'auto'">
       My second col content
     </column>
     <column [xs]="12" [sm]="4" [md]="2">
