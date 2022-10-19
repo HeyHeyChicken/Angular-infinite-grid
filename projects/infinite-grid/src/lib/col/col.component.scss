@@ -19,6 +19,13 @@
 }
 
 $size: 24;
+$alignments: ("start": "left", "center": "center", "end": "right");
+
+@each $alignment, $i in $alignments {
+    .text-#{$alignment}{
+        text-align: #{$i};
+    }
+}
 
 @media (min-width: 0px){
     @for $row-size from 1 through $size {
@@ -31,6 +38,12 @@ $size: 24;
                     }
                 }
             }
+        }
+    }
+
+    @each $alignment, $i in $alignments {
+        .text-xs-#{$alignment}{
+            text-align: #{$i};
         }
     }
 }
@@ -48,6 +61,12 @@ $size: 24;
             }
         }
     }
+
+    @each $alignment, $i in $alignments {
+        .text-sm-#{$alignment}{
+            text-align: #{$i};
+        }
+    }
 }
 
 @media (min-width: 768px){
@@ -61,6 +80,12 @@ $size: 24;
                     }
                 }
             }
+        }
+    }
+
+    @each $alignment, $i in $alignments {
+        .text-md-#{$alignment}{
+            text-align: #{$i};
         }
     }
 }
@@ -78,6 +103,12 @@ $size: 24;
             }
         }
     }
+
+    @each $alignment, $i in $alignments {
+        .text-lg-#{$alignment}{
+            text-align: #{$i};
+        }
+    }
 }
 
 @media (min-width: 1200px){
@@ -93,6 +124,12 @@ $size: 24;
             }
         }
     }
+
+    @each $alignment, $i in $alignments {
+        .text-xl-#{$alignment}{
+            text-align: #{$i};
+        }
+    }
 }
 
 @media (min-width: 1400px){
@@ -106,6 +143,12 @@ $size: 24;
                     }
                 }
             }
+        }
+    }
+
+    @each $alignment, $i in $alignments {
+        .text-xxl-#{$alignment}{
+            text-align: #{$i};
         }
     }
 }

@@ -13,7 +13,7 @@ Fast and minimalist grid system for your Angular project.
     <column [xs]="12" [sm]="4" [md]="6" [lg]="5" [xl]="4" [xxl]="3">
       My first col content
     </column>
-    <column [xs]="'auto'">
+    <column [xs]="'auto'" text_lg="start">
       My second col content
     </column>
     <column [xs]="12" [sm]="4" [md]="2">
@@ -43,6 +43,16 @@ $ npm install @heyheychicken/infinite-grid
 ## Features
 
 * Focus on high performance
+* Text alignment per breakpoint<br/>
+```html
+<container>
+  <row>
+    <column [text_xs]="'start'" [text_md]="'center'" [text_xl]="'end'">
+      ...
+    </column>
+  </row>
+</container>
+```
 * Customizable number of columns per row<br/>
   By default, the number of columns is set to 12. You can modify it as you wish with the "size" attribute on the "row" element.
 ```html

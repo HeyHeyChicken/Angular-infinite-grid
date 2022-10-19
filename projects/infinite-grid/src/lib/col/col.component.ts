@@ -16,6 +16,13 @@ export class ColComponent implements OnInit {
   @Input() public xl: number | 'auto' = -1;
   @Input() public xxl: number | 'auto' = -1;
 
+  @Input() public text_xs?: 'start' | 'center' | 'end';
+  @Input() public text_sm?: 'start' | 'center' | 'end';
+  @Input() public text_md?: 'start' | 'center' | 'end';
+  @Input() public text_lg?: 'start' | 'center' | 'end';
+  @Input() public text_xl?: 'start' | 'center' | 'end';
+  @Input() public text_xxl?: 'start' | 'center' | 'end';
+
   protected row: RowComponent;
 
   @HostBinding('class') classAttribute: string = '';
@@ -31,6 +38,8 @@ export class ColComponent implements OnInit {
     if (this.row.size > 0) {
       CLASSES.push('row-' + this.row.size);
     }
+    //#region Size
+    
     if (this.xs == 'auto') CLASSES.push('xs-' + this.xs);
     else if (this.xs >= 0) CLASSES.push('xs-' + this.xs);
 
@@ -48,6 +57,19 @@ export class ColComponent implements OnInit {
 
     if (this.xxl == 'auto') CLASSES.push('xxl-' + this.xs);
     else if (this.xxl >= 0) CLASSES.push('xxl-' + this.xxl);
+
+    //#endregion
+
+    //#region TextAlign
+
+    if (this.text_xs != undefined) CLASSES.push('text-xs-' +  this.text_xs);
+    if (this.text_sm != undefined) CLASSES.push('text-sm-' +  this.text_sm);
+    if (this.text_md != undefined) CLASSES.push('text-md-' +  this.text_md);
+    if (this.text_lg != undefined) CLASSES.push('text-lg-' +  this.text_lg);
+    if (this.text_xl != undefined) CLASSES.push('text-xl-' +  this.text_xl);
+    if (this.text_xxl != undefined) CLASSES.push('text-xxl-' +  this.text_xxl);
+
+    //#endregion
 
     this.classAttribute = CLASSES.join(' ');
   }
