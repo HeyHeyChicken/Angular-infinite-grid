@@ -53,11 +53,21 @@ $ npm install @heyheychicken/infinite-grid
   </row>
 </container>
 ```
+* Use align-self utilities on column items to individually change their alignment on the y-axis. Choose from the following options: start, end, center, baseline, or stretch (browser default).<br/>
+```html
+<container>
+  <row>
+    <column [align_self_sm]="'start'" [align_self_lg]="'baseline'" [align_self_xxl]="'end'">
+      ...
+    </column>
+  </row>
+</container>
+```
 * Customizable number of columns per row<br/>
   By default, the number of columns is set to 12. You can modify it as you wish with the "size" attribute on the "row" element.
 ```html
 <container>
-  <row size="24">
+  <row [size]="24">
     <column [xs]="16">
       ...
     </column>

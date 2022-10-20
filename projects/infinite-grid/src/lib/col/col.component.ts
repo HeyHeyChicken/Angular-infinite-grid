@@ -16,12 +16,19 @@ export class ColComponent implements OnInit {
   @Input() public xl: number | 'auto' = -1;
   @Input() public xxl: number | 'auto' = -1;
 
-  @Input() public text_xs?: 'start' | 'center' | 'end';
-  @Input() public text_sm?: 'start' | 'center' | 'end';
-  @Input() public text_md?: 'start' | 'center' | 'end';
-  @Input() public text_lg?: 'start' | 'center' | 'end';
-  @Input() public text_xl?: 'start' | 'center' | 'end';
-  @Input() public text_xxl?: 'start' | 'center' | 'end';
+  @Input() public text_xs?: "start" | "center" | "end";
+  @Input() public text_sm?: "start" | "center" | "end";
+  @Input() public text_md?: "start" | "center" | "end";
+  @Input() public text_lg?: "start" | "center" | "end";
+  @Input() public text_xl?: "start" | "center" | "end";
+  @Input() public text_xxl?: "start" | "center" | "end";
+
+  @Input() public align_self_xs?: "start" | "center" | "end" | "baseline" | "stretch";
+  @Input() public align_self_sm?: "start" | "center" | "end" | "baseline" | "stretch";
+  @Input() public align_self_md?: "start" | "center" | "end" | "baseline" | "stretch";
+  @Input() public align_self_lg?: "start" | "center" | "end" | "baseline" | "stretch";
+  @Input() public align_self_xl?: "start" | "center" | "end" | "baseline" | "stretch";
+  @Input() public align_self_xxl?: "start" | "center" | "end" | "baseline" | "stretch";
 
   protected row: RowComponent;
 
@@ -68,6 +75,17 @@ export class ColComponent implements OnInit {
     if (this.text_lg != undefined) CLASSES.push('text-lg-' +  this.text_lg);
     if (this.text_xl != undefined) CLASSES.push('text-xl-' +  this.text_xl);
     if (this.text_xxl != undefined) CLASSES.push('text-xxl-' +  this.text_xxl);
+
+    //#endregion
+    
+    //#region SelfAlign
+
+    if (this.align_self_xs != undefined) CLASSES.push('align-self-xs-' +  this.align_self_xs);
+    if (this.align_self_sm != undefined) CLASSES.push('align-self-sm-' +  this.align_self_sm);
+    if (this.align_self_md != undefined) CLASSES.push('align-self-md-' +  this.align_self_md);
+    if (this.align_self_lg != undefined) CLASSES.push('align-self-lg-' +  this.align_self_lg);
+    if (this.align_self_xl != undefined) CLASSES.push('align-self-xl-' +  this.align_self_xl);
+    if (this.align_self_xxl != undefined) CLASSES.push('align-self-xxl-' +  this.align_self_xxl);
 
     //#endregion
 
