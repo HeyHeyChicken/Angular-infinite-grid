@@ -48,8 +48,8 @@ npm i @heyheychicken/infinite-grid
 ## 💼 Features
 
 <ul>
-  <li>Focus on high performance</li>
-  <li>Text alignment per breakpoint</li>
+  <li>Focus on high performance.</li>
+  <li>Text alignment per breakpoint.</li>
 </ul>
 
 ```html
@@ -63,7 +63,7 @@ npm i @heyheychicken/infinite-grid
 ```
 
 <ul>
-  <li>Use align-self utilities on column items to individually change their alignment on the y-axis. Choose from the following options: start, end, center, baseline, or stretch (browser default).</li>
+  <li>Use align-self utilities on column items to individually change their alignment on the y-axis.<br/>Choose from the following options: start, end, center, baseline, or stretch (browser default).</li>
 </ul>
 
 ```html
