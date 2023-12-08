@@ -1,11 +1,11 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/logo.png" alt="Wizz" width="300">
+<img src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/logo.png" alt="Wizz" width="300">
 
 **Angular Wizz** is a component that allows you to implement MSN's Wizz in your Angular applications.<br>
 </div>
 <div align="center">
-<img width="820px" src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/video.gif">
+<img width="820px" src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/video.gif">
 </div>
 
 ## 👋 Introduction
@@ -15,9 +15,9 @@ You can add it to your applications for fun, hide an easter egg or sign your wor
 
 ## 🔧 Prerequisites
 
-[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/nodeJSLogo.png" width="18" /> Node.js](//nodejs.org/)<br/>
-[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/npmLogo.png" width="18" /> npm](//npmjs.com/)<br/>
-[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/angularLogo.png" width="18" /> Angular](//angular.io/)<br/>
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/nodeJSLogo.png" width="18" /> Node.js](//nodejs.org/)<br/>
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/npmLogo.png" width="18" /> npm](//npmjs.com/)<br/>
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/angularLogo.png" width="18" /> Angular](//angular.io/)<br/>
 
 ## ⬇️ Installation
 
@@ -26,7 +26,7 @@ If this is a brand new project, make sure to create an Angular project first wit
 Installation is done using the [`npm install` command](//docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```console
-npm i @heyheychicken/angular-wizz
+npm i @heyheychicken/ng-infinite-grid
 ```
 
 ## 🚀 Usage
