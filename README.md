@@ -1,17 +1,14 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/logo.png" alt="ng-infinite-grid" width="300">
+<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-infinite-grid/main/.github/logo.png" alt="Angular-infinite-grid" width="300">
 
-**ng-infinite-grid** is fast and minimalist grid system for your Angular project.<br>
-</div>
-<div align="center">
-<img width="820px" src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/video.gif">
+**Angular-infinite-grid** is fast and minimalist grid system for your Angular project.<br>
 </div>
 
 ## 👋 Introduction
 
-**ng-infinite-grid** is fast and minimalist grid system for your Angular project.<br>
-The philosophy behind ng-infinite-grid is to provide a lightweight and fast Bootstrap-style grid system.<br>
+**Angular-infinite-grid** is fast and minimalist grid system for your Angular project.<br>
+The philosophy behind Angular-infinite-grid is to provide a lightweight and fast Bootstrap-style grid system.<br>
 Your grid is responsive, and you can define the number of columns per line as you wish.<br>
 ```html
 <container>
@@ -31,9 +28,9 @@ Your grid is responsive, and you can define the number of columns per line as yo
 
 ## 🔧 Prerequisites
 
-[<img src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/nodeJSLogo.png" width="18" /> Node.js](//nodejs.org/)<br/>
-[<img src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/npmLogo.png" width="18" /> npm](//npmjs.com/)<br/>
-[<img src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/.github/angularLogo.png" width="18" /> Angular](//angular.io/)<br/>
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-infinite-grid/main/.github/nodeJSLogo.png" width="18" /> Node.js](//nodejs.org/)<br/>
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-infinite-grid/main/.github/npmLogo.png" width="18" /> npm](//npmjs.com/)<br/>
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-infinite-grid/main/.github/angularLogo.png" width="18" /> Angular](//angular.io/)<br/>
 
 ## ⬇️ Installation
 
@@ -95,7 +92,7 @@ npm i @heyheychicken/infinite-grid
 
 ## 💻 Compatibility
 
-"ng-infinite-grid" has only been officially tested on Angular 17.
+"Angular-infinite-grid" has only been officially tested on Angular 17.
 
 <br>
 <br>
