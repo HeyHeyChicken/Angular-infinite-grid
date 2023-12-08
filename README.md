@@ -51,6 +51,7 @@ npm i @heyheychicken/infinite-grid
   <li>Focus on high performance</li>
   <li>Text alignment per breakpoint</li>
 </ul>
+
 ```html
 <container>
   <row>
@@ -64,6 +65,7 @@ npm i @heyheychicken/infinite-grid
 <ul>
   <li>Use align-self utilities on column items to individually change their alignment on the y-axis. Choose from the following options: start, end, center, baseline, or stretch (browser default).</li>
 </ul>
+
 ```html
 <container>
   <row>
@@ -77,6 +79,7 @@ npm i @heyheychicken/infinite-grid
 <ul>
   <li>Customizable number of columns per row.<br/>By default, the number of columns is set to 12. You can modify it as you wish with the "size" attribute on the "row" element.</li>
 </ul>
+
 ```html
 <container>
   <row [size]="24">
