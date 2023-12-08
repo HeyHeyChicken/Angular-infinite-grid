@@ -1,0 +1,26 @@
+{
+  "name": "@heyheychicken/infinite-grid",
+  "version": "17.0.0",
+  "description": "Fast and minimalist grid system for your Angular project.",
+  "main": "src/public-api.js",
+  "author": "Antoine Duval (HeyHeyChicken)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HeyHeyChicken/ng-infinite-grid.git"
+  },
+  "homepage": "https://github.com/HeyHeyChicken/ng-infinite-grid",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "grid",
+    "row",
+    "container",
+    "column"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0"
+  }
+}

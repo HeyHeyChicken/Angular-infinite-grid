@@ -1,0 +1,235 @@
+@import "../shared.scss";
+
+:host {
+    flex: 1 0 0%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    &:not(:empty) {
+        padding: 0 $margin;
+        margin: $margin 0;
+        max-height: calc(100% - #{$margin} * 2);
+    }
+
+    &.xs-auto, &.sm-auto, &.md-auto, &.lg-auto, &.xl-auto, &.xxl-auto{
+        flex: 0 0 auto;
+        width: auto;
+    }
+}
+
+$size: 24;
+$textAlignments: (
+    "start": "left",
+    "center": "center",
+    "end": "right"
+);
+$selfAlignments: (
+    "start": "flex-start",
+    "center": "center",
+    "end": "flex-end",
+    "baseline": "baseline",
+    "stretch": "stretch"
+);
+
+@each $alignment, $i in $textAlignments {
+    :host {
+        &.text-#{$alignment}{
+            text-align: #{$i};
+        }
+    }
+}
+
+@each $alignment, $i in $selfAlignments {
+    :host {
+        &.align-self-#{$alignment}{
+            align-self: #{$i};
+        }
+    }
+}
+
+@media (min-width: 0px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.xs-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+
+    @each $alignment, $i in $textAlignments {
+        :host {
+            &.text-xs-#{$alignment}{
+                text-align: #{$i};
+            }
+        }
+    }
+
+    @each $alignment, $i in $selfAlignments {
+        :host {
+            &.align-self-xs-#{$alignment}{
+                align-self: #{$i};
+            }
+        }
+    }
+}
+
+@media (min-width: 576px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.sm-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+
+    @each $alignment, $i in $textAlignments {
+        :host {
+            &.text-sm-#{$alignment}{
+                text-align: #{$i};
+            }
+        }
+    }
+
+    @each $alignment, $i in $selfAlignments {
+        :host {
+            &.align-self-sm-#{$alignment}{
+                align-self: #{$i};
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.md-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+
+    @each $alignment, $i in $textAlignments {
+        :host {
+            &.text-md-#{$alignment}{
+                text-align: #{$i};
+            }
+        }
+    }
+    
+    @each $alignment, $i in $selfAlignments {
+        :host {
+            &.align-self-md-#{$alignment}{
+                align-self: #{$i};
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.lg-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+
+    @each $alignment, $i in $textAlignments {
+        :host {
+            &.text-lg-#{$alignment}{
+                text-align: #{$i};
+            }
+        }
+    }
+
+    @each $alignment, $i in $selfAlignments {
+        :host {
+            &.align-self-lg-#{$alignment}{
+                align-self: #{$i};
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.xl-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+
+    @each $alignment, $i in $textAlignments {
+        :host {
+            &.text-xl-#{$alignment}{
+                text-align: #{$i};
+            }
+        }
+    }
+
+    @each $alignment, $i in $selfAlignments {
+        :host {
+            &.align-self-xl-#{$alignment}{
+                align-self: #{$i};
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px){
+    @for $row-size from 1 through $size {
+        @for $col-size from 1 through $size {
+            :host {
+                &.row-#{$row-size}{
+                    &.xxl-#{$col-size}{
+                        flex: 0 0 auto;
+                        width: calc(1% * $col-size / $row-size * 100);
+                    }
+                }
+            }
+        }
+    }
+
+    @each $alignment, $i in $textAlignments {
+        :host {
+            &.text-xxl-#{$alignment}{
+                text-align: #{$i};
+            }
+        }
+    }
+
+    @each $alignment, $i in $selfAlignments {
+        :host {
+            &.align-self-xxl-#{$alignment}{
+                align-self: #{$i};
+            }
+        }
+    }
+}

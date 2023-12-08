@@ -1,93 +1,78 @@
 <div align="center">
-  
-<img width="200" src="https://raw.githubusercontent.com/HeyHeyChicken/ng-infinite-grid/main/projects/infinite-grid/logo.png" />
-<br/>
-<br/>
-Fast and minimalist grid system for your Angular project.
+
+<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/logo.png" alt="Wizz" width="300">
+
+**Angular Wizz** is a component that allows you to implement MSN's Wizz in your Angular applications.<br>
 </div>
-<br/>
+<div align="center">
+<img width="820px" src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/video.gif">
+</div>
 
-```html
-<container>
-  <row>
-    <column [xs]="12" [sm]="4" [md]="6" [lg]="5" [xl]="4" [xxl]="3">
-      My first col content
-    </column>
-    <column [xs]="'auto'" text_lg="start">
-      My second col content
-    </column>
-    <column [xs]="12" [sm]="4" [md]="2">
-      My third col content
-    </column>
-  </row>
-</container>
-```
+## 👋 Introduction
 
-## Installation
+**Angular Wizz** is a component that allows you to implement MSN's Wizz in your Angular applications.<br>
+You can add it to your applications for fun, hide an easter egg or sign your work 🤣
 
-This is a [Node.js](https://nodejs.org/en/) module available through the
-[npm registry](https://www.npmjs.com/).
+## 🔧 Prerequisites
 
-Before installing, [download and install Node.js](https://nodejs.org/en/download/).
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/nodeJSLogo.png" width="18" /> Node.js](//nodejs.org/)<br/>
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/npmLogo.png" width="18" /> npm](//npmjs.com/)<br/>
+[<img src="https://raw.githubusercontent.com/HeyHeyChicken/Angular-Wizz/main/.github/angularLogo.png" width="18" /> Angular](//angular.io/)<br/>
 
-If this is a brand new project, make sure to create a `package.json` first with
-the [`npm init` command](https://docs.npmjs.com/creating-a-package-json-file).
+## ⬇️ Installation
 
-Installation is done using the
-[`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
+This is a [Node.js](//nodejs.org/en/) module available through the [npm registry](//www.npmjs.com/).<br>
+If this is a brand new project, make sure to create an Angular project first with the [`npx ng new myProjectName` command](//angular.io/tutorial/tour-of-heroes/toh-pt0).<br>
+Installation is done using the [`npm install` command](//docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```console
-$ npm install @heyheychicken/infinite-grid
+npm i @heyheychicken/angular-wizz
 ```
 
-## Features
+## 🚀 Usage
 
-* Focus on high performance
-* Text alignment per breakpoint<br/>
+1) Import the `WizzModule` in your standalone component our in your app module.
+```ts
+@Component({
+  ...
+  standalone: true,
+  imports: [..., WizzModule],
+  ...
+})
+```
+
+2) Add the WizzComponent in your `app.component.html` file.
 ```html
-<container>
-  <row>
-    <column [text_xs]="'start'" [text_md]="'center'" [text_xl]="'end'">
-      ...
-    </column>
-  </row>
-</container>
-```
-* Use align-self utilities on column items to individually change their alignment on the y-axis. Choose from the following options: start, end, center, baseline, or stretch (browser default).<br/>
-```html
-<container>
-  <row>
-    <column [align_self_sm]="'start'" [align_self_lg]="'baseline'" [align_self_xxl]="'end'">
-      ...
-    </column>
-  </row>
-</container>
-```
-* Customizable number of columns per row<br/>
-  By default, the number of columns is set to 12. You can modify it as you wish with the "size" attribute on the "row" element.
-```html
-<container>
-  <row [size]="24">
-    <column [xs]="16">
-      ...
-    </column>
-    <column [xs]="8">
-      ...
-    </column>
-  </row>
-</container>
+...
+<wizz #wizzComponent></wizz>
+...
 ```
 
-## Philosophy
+3) Just write `WIZZ` (in uppercase) anywhere on your keyboard when you are using you app.
 
-The philosophy behind ng-infinite-grid is to provide a lightweight and fast Bootstrap-style grid system.<br/>
-Your grid is responsive, and you can define the number of columns per line as you wish.
+4) (Optional) If you wan't to manualy trigger the wizz, just implement it in your  `app.component.ts` file.
+```ts
+  //#region Attributes
 
-## Contributing
+  @ViewChild('wizzComponent') wizzComponent?: WizzComponent;
 
-The ng-infinite-grid project welcomes all constructive contributions. Contributions take many forms,
-from code for bug fixes and enhancements, to additions and fixes to documentation, etc.
+  //#endregion
 
-## License
+  //#region Function
 
-MIT
+  protected wizzButtonClicked(): void{
+    this.wizzComponent?.wizz();
+  }
+
+  //#endregion
+```
+
+
+## 💻 Compatibility
+
+"Angular Wizz" has only been officially tested on Angular 17.
+
+<br>
+<br>
+
+Created by [Antoine Duval (HeyHeyChicken)](//antoine.cuffel.fr) with ❤ and ☕ (chocolate) in [Mesnil-Panneville](//en.wikipedia.org/wiki/Mesnil-Panneville).

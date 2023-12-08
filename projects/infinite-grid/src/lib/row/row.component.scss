@@ -1,7 +1,0 @@
-@import "../shared.scss";
-
-:host {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 calc(#{$margin} * -1);
-}
