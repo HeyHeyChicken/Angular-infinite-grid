@@ -77,7 +77,7 @@ npm i @heyheychicken/infinite-grid
 ```
 
 <ul>
-  <li>Customizable number of columns per row.<br/>By default, the number of columns is set to 12. You can modify it as you wish with the "size" attribute on the "row" element.</li>
+  <li>Customizable number of columns per row.<br/>By default, the number of columns is set to 12.<br/>You can modify it as you wish with the "size" attribute on the "row" element.</li>
 </ul>
 
 ```html
