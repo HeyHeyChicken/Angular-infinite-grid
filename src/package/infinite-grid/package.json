@@ -1,12 +1,15 @@
 {
   "name": "@heyheychicken/infinite-grid",
-  "version": "17.0.2",
+  "version": "17.0.4",
   "description": "Fast and minimalist grid system for your Angular project.",
   "main": "src/public-api.js",
   "author": "Antoine Duval (HeyHeyChicken)",
   "repository": {
     "type": "git",
     "url": "https://github.com/HeyHeyChicken/ng-infinite-grid.git"
+  },
+  "scripts": {
+    "nexus": "npm install && ng-packagr -p ./ng-package.json && cd ./dist && npm publish && cd ../ && rmdir /Q /S .\\dist && rmdir /Q /S .\\node_modules"
   },
   "homepage": "https://github.com/HeyHeyChicken/ng-infinite-grid",
   "keywords": [
